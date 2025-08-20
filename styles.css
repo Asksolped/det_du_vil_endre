@@ -92,6 +92,10 @@ button:active {
     font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
     font-size:1.5rem;
 }
+.weatherIcon{
+    width: 10vw;
+    aspect-ratio: 1/1;
+}
 @media (max-width:640px) {
     .grid {
         grid-template-columns: 1fr;
