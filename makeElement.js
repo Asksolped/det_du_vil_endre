@@ -1,4 +1,4 @@
-export default function makeElement( elementName, properties ){
+const makeElement = ( elementName, properties ) => {
     if (elementName === null || elementName.length === 0) throw Error("Missing Elementname");
     const element = document.createElement(elementName);
     Object.entries(properties).foreach((prop) => {
@@ -7,3 +7,5 @@ export default function makeElement( elementName, properties ){
     });
     return element;
 }
+
+export default makeElement;
