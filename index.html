@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Weather Forecast — Simple Setup</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <script type="module" src="index.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>Weather Forecast</h1>
+
+    <div class="buttons" role="group" aria-label="Choose city">
+      <button type="button" id="btn-oslo" value="https://api.met.no/weatherapi/nowcast/2.0/complete?lat=59.9333&lon=10.7166">Oslo</button>
+      <button type="button" id="btn-trd" value="https://api.met.no/weatherapi/nowcast/2.0/complete?lat=63.4308&lon=10.4034">Trondheim</button>
+    </div>
+
+    <section class="card" aria-labelledby="forecast-title">
+      <div class="row" style="margin-bottom:8px;">
+        <div id="forecast-title" class="small">Selected location</div>
+        <div id="location" class="small">—</div>
+      </div>
+
+      <div class="grid" aria-live="polite">
+        <div class="field">
+          <div class="label">Air Temperature</div>
+          <div class="value" id="airTemp">—</div>
+        </div>
+
+        <div class="field">
+          <div class="label">Relative Humidity</div>
+          <div class="value" id="relHum">—</div>
+        </div>
+
+        <div class="field">
+          <div class="label">Wind Direction</div>
+          <div class="value" id="windDir">—</div>
+        </div>
+
+        <div class="field">
+          <div class="label">Wind Speed</div>
+          <div class="value" id="windSpd">—</div>
+        </div>
+
+        <div class="field" style="grid-column: 1 / -1;">
+          <div class="label">ASCII Weather</div>
+          <div class="value ascii" id="asciiWeather">—</div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
