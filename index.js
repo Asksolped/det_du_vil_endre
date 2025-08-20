@@ -1,7 +1,4 @@
-import weatherImage from "./weatherImage.js";
-/* Mangler funskjon som skal fetche og fylle  */
-
-
+/* Mangler funksjonen FillFields */
 const btns = document.querySelectorAll("button");
 const fields = document.querySelectorAll(".field");
 
